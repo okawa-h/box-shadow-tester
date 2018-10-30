@@ -1,0 +1,265 @@
+@charset "utf-8";
+
+/*-------------------------------------------------------------------------
+	Init
+/*-----------------------------------------------------------------------*/
+*, *:before, *:after {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+*,
+section,
+header,
+footer {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	overflow-y: scroll;
+	word-break: normal;
+	font-size: 14px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+:focus {
+	outline: 0;
+}
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+img {
+	border: 0;
+	vertical-align: bottom;
+}
+address {
+	font-style: normal;
+}
+
+/*-------------------------------------------------------------------------
+	Setup
+/*-----------------------------------------------------------------------*/
+body {
+	font-family: "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Meiryo, "メイリオ", sans-serif;
+}
+p,
+li,
+dt,
+dl {
+	line-height: 1.5;
+	letter-spacing: 0px;
+}
+strong {
+	font-weight: bold;
+}
+em {
+	font-style: normal;
+}
+a,
+a:link,
+a:hover {
+	text-decoration: none;
+	opacity: 1;
+}
+div:after,
+ul:after,
+dl:after,
+li:after,
+p:after,
+section:after,
+article:after,
+header:after,
+footer:after,
+nav:after,
+aside:after {
+	display: block;
+	content: "";
+	clear: both;
+	visibility: hidden;
+}
+
+/*-------------------------------------------------------------------------
+	Layout
+/*-----------------------------------------------------------------------*/
+body {
+	-webkit-font-smoothing: antialiased;
+	background-color: #eee;
+}
+
+#all {
+	padding: 60px;
+}
+
+#main {
+	padding: 30px;
+	background-color: #fff;
+}
+
+.wrap {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+button {
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	outline: none;
+	appearance: none;
+	cursor: pointer;
+}
+
+textarea {
+	margin: 0;
+	padding: 0;
+	background: none;
+	border: none;
+	border-radius: 0;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+input[type="range"] {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+input[type="range"]:focus,input[type="range"]:active {
+	outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	cursor: pointer;
+	position: relative;
+	border: none;
+	width: 12px;
+	height: 12px;
+	display: block;
+	background-color: #262626;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+}
+
+/*-------------------------------------------------------------------------
+	Common
+/*-----------------------------------------------------------------------*/
+h1 {
+	margin-bottom: 30px;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+/*-------------------------------------------------------------------------
+	Style
+/*-----------------------------------------------------------------------*/
+#tester {
+	display: flex;
+}
+
+.preview {
+	position: relative;
+	width: 50%;
+}
+
+.shape {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -75px;
+	margin-left: -75px;
+	width: 100px;
+	height: 100px;
+	background-color: #3094f2;
+}
+
+.styling {
+	width: 50%;
+}
+
+ul {
+	margin-bottom: 30px;
+}
+
+li {
+	margin-bottom: 20px;
+}
+
+li:last-child {
+	margin-bottom: 0;
+}
+
+li label {
+	display: block;
+}
+
+li input[type="range"] {
+	position: relative;
+	top: -2px;
+	height: 6px;
+	background-color: #ced3d6;
+}
+
+.range-value {
+	display: inline-block;
+	position: relative;
+	min-width: 6.4em;
+	margin-left: 1em;
+	padding: .6em 1.5em;
+	background-color: #666;
+	color: #fff;
+	font-size: 12px;
+	line-height: 1;
+	text-align: center;
+}
+
+.range-value:before {
+	display: block;
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 100%;
+	margin-top: -.5em;
+	border: .5em solid transparent;
+	border-right: .5em solid #666;
+}
+
+textarea {
+	-webkit-font-smoothing: antialiased;
+	width: 100%;
+	min-height: 8em;
+	padding: .5em;
+	border: 2px solid #ced3d6;
+	border-radius: 3px;
+	font-family: "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Meiryo, "メイリオ", sans-serif;
+	font-size: 12px;
+	resize: none;
+}
+
+textarea:focus {
+	border-color: #3094f2;
+}
